@@ -10,11 +10,11 @@
     <link rel="preload" href="/fonts/public/fonts/onest-v6-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
     <title>Pet Planet</title>
   </head>
-  <body>
+  <body>    
     <header class="header">
       <div class="container">
         <img class="header__logo" src="./images/logo.svg" alt="Логотип Pet Planet">
-        <h1 class="header__title">Pet Planet&nbsp;&mdash; магазин товаров для животных</h1>
+        <h1 class="header__title">Petplanet&nbsp;&mdash; магазин товаров для животных</h1>
       </div>
     </header>
     <main>
@@ -27,8 +27,7 @@
       <section class="about">
         <div class="container">
           <h2 class="about__title">О нас</h2>
-          <div class="about__box">
-            <!-- cat background -->
+          <div class="about__box">            
             <div class="about__content">
               <p class="about__text">Мы&nbsp;&mdash; команда любящих и&nbsp;заботливых владельцев животных, которые с&nbsp;особым вниманием относятся к&nbsp;потребностям и&nbsp;радостям наших пушистых друзей.</p>
               <p class="about__text">Стремясь к&nbsp;тому, чтобы ваш питомец был здоровым, счастливым и&nbsp;полным энергии, мы&nbsp;предлагаем только лучшие товары и&nbsp;услуги, проверенные временем и&nbsp;рекомендованные ветеринарами.</p>
@@ -36,36 +35,38 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="container">
-          <h2 class="advantages__title">Наши преимущества</h2>
+      <section class="advantages">       
+        <div class="advantages__bg">
+          <div class="advantages__star"></div><!-- green star svg-->
+          <div class="container">
+            <h2 class="advantages__title">Наши преимущества</h2>
 
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img class="advantages__img" src="./images/soft-dog-house.png" alt="">
-              <h3 class="advantages__subtitle">Широкий ассортимент</h3>
-              <p class="advantages__text">У&nbsp;нас есть все для того, чтобы сделать жизнь вашего любимца комфортной и&nbsp;уютной.</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="./images/miska.png" alt="">
-              <h3 class="advantages__subtitle">Качество и безопасность</h3>
-              <p class="advantages__text">Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя особое внимание качеству и&nbsp;безопасности.</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="./images/pet.png" alt="">
-              <h3 class="advantages__subtitle">Персональный подход</h3>
-              <p class="advantages__text">Мы&nbsp;понимаем, что каждый питомец уникален, поэтому предлагаем вам индивидуальные рекомендации по&nbsp;выбору товаров.</p>
-            </li>            
-          </ul>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__subtitle">Широкий ассортимент</h3>
+                <p class="advantages__text">У&nbsp;нас есть все для того, чтобы сделать жизнь вашего любимца комфортной и&nbsp;уютной.</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__subtitle">Качество и безопасность</h3>
+                <p class="advantages__text">Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя особое внимание качеству и&nbsp;безопасности.</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__subtitle">Персональный подход</h3>
+                <p class="advantages__text">Мы&nbsp;понимаем, что каждый питомец уникален, поэтому предлагаем вам индивидуальные рекомендации по&nbsp;выбору товаров.</p>
+              </li>            
+            </ul>
+          </div>
         </div>
       </section>
       <section class="subscribe">
         <div class="container">
           <h2 class="subscribe__title">Подпишись на&nbsp;рассылку и&nbsp;узнавай о&nbsp;новинках первым!</h2>
           <form class="subscribe__form">
-            <fieldset>
+            <fieldset class="subscribe__fieldset">
               <input class="subscribe__input" type="email" name="email" placeholder="E-mail" required>
-              <button class="subscribe__button" type="submit">Отправить</button>
+              <button class="subscribe__button" type="submit">
+                <span class="subscribe__button_text">Отправить</span>
+              </button>
             </fieldset>
           </form>
         </div>

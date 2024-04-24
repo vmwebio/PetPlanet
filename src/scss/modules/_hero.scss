@@ -1,0 +1,92 @@
+.hero {    
+    background-color: $purple;
+    background-image: url('/images/bg-dog.webp'), url('/images/pattern.svg');
+    background-position: right bottom, center;
+    background-repeat: no-repeat, repeat;
+    background-size: contain, cover;
+    color: $light;    
+    height: 795px;
+
+    @include laptop {
+        background-size: cover;
+        height: 567px;
+    }
+
+    @include tablet {
+        background-size: 64%, cover;
+        height: 813px;
+    }
+    
+    @include mobile {
+        background-size: 95%, cover;
+        height: 750px;
+        padding: 120px 0;
+    }
+
+    @include small {
+        background-size: 80%, cover;
+        padding: 75px 0 10px;
+        height: 552px;
+    }
+    
+
+    &__title {
+        font-weight: 700;
+        font-size: 84px;
+        text-transform: uppercase;
+        max-width: 500px;        
+        margin-bottom: 25px;
+        line-height: 1.2;
+        padding: 210px 0 10px;
+
+        @media (max-width: 1100px) {
+            font-size: 54px;
+            max-width: min-content;
+        }
+
+        @include laptop {
+            padding: 170px 0 10px;            
+
+        }
+
+        @include tablet {
+            font-size: 64px;
+            line-height: 1;
+            padding: 150px 0 10px;
+        }
+        
+        @include mobile {
+            font-size: 52px;
+            padding: 45px 0 16px;
+            margin-bottom: 0;
+        }
+
+        @include small {
+            font-size: 35px;
+            padding: 45px 0 0;
+        }                
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 24px;
+        max-width: 420px;
+
+        @include laptop {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 20px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+        }
+
+        @include small {
+            font-size: 16px;
+            padding: 5px 0;
+        }
+    }    
+}

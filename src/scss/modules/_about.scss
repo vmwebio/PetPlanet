@@ -1,0 +1,102 @@
+.about {
+    max-width: 100%;
+    padding: 120px 0 278px; 
+
+    @include tablet {
+        padding: 120px 0 200px; 
+    }
+    
+    @include mobile {
+        padding: 80px 0 122px;
+    }
+
+    &__title {
+        text-align: center;        
+        line-height: 1.3;
+        margin-bottom: 32px;
+
+        @include tablet {
+            font-size: 44px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;        
+        max-width: 1300px;
+
+        @include tablet {
+            display: block;
+        }
+        
+        @include mobile {
+            display: block;
+        }
+           
+        &::before {
+            content: '';
+            display: block;
+            flex-basis: 50%;
+            transform: translate(-18px);
+            height: 345px;
+            background-image: url('/images/cat-play.webp');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @include tablet {         
+                width: 408px;
+                height: 305px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+            
+            @include mobile {
+                height: 191px;
+                transform: none;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+        padding: 20px 24px 0;
+
+        @include tablet {
+            padding: 0;
+        }
+        
+        @include mobile {
+            padding: 10px 0;            
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+
+        @media (max-width: 1160px) {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 20px;
+        }
+        
+        @include mobile {
+            font-size: 19px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,3 +1,39 @@
 .header {
-    
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+
+    &__logo {
+        width: 331px;        
+        padding-top: 30px;
+
+        @include tablet {
+            width: 200px;
+        }
+        
+        @include mobile {            
+            width: 200px;
+        }
+    }
+
+    &__title {
+        color: $light;
+        font-size: 25px;
+        margin-top: 10px;
+
+        @include laptop {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
 }

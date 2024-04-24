@@ -1,0 +1,151 @@
+.footer {
+    padding: 80px 32px;
+    background-color: $green;
+    background-image: url('/images/paw.svg');
+    background-repeat: no-repeat;
+    background-position: 41vw 50px;
+    background-size: contain;
+    color: $light;
+    padding: 14px 0 27px;
+
+    @include laptop {
+        background-size: 25%;
+        background-position: 41vw 150px;
+    }
+
+    @include tablet {
+        height: 300px;
+        background-size: 200px;
+        background-position: 65vw 160px;
+    }
+    
+    @include mobile {
+        background-size: 45vw;
+        background-position: 62vw 200px;
+        height: 344px;
+    }
+
+    @include small {
+        background-size: 45vw;
+        background-position: 62vw 220px;
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @include laptop {}
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
+        
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        height: 57px;
+        margin-top: 66px;
+
+        
+        @include laptop {
+            width: 331px;
+            height: 57px;
+        }
+
+        @include tablet {
+            width: 200px;
+            height: 35px;
+        }
+
+        @include mobile {
+            width: 200px;
+            height: 35px;
+            margin-top: 30px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__email {
+
+        &_link {
+            font-style: normal;
+            margin: 66px 0 16px;
+            font-size: 24px;        
+            border:1px solid transparent; 
+
+            &:focus {
+                border-color: yellow;
+                border-radius: 5px;
+            }
+
+            @include tablet {
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 16px;
+                padding: 40px 0 16px;
+            }
+        }
+    }
+
+    &__social {
+
+        &_list {            
+            display: flex;
+            gap: 12px;            
+        }
+
+        &_item {
+            display: flex;
+        }
+
+        &_link {
+            border:1px solid transparent; 
+
+            &:focus {
+                border-color: yellow;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-bottom: 17px;
+        font-size: 16px;
+
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+
+    &__developer {
+        font-size: 16px;
+        width: max-content;
+
+        @include mobile {
+            font-size: 12px;
+        }
+
+        &_link {
+            display: flex;
+            flex-direction: column;
+            border:1px solid transparent; 
+
+
+            &:focus {
+                border-color: yellow;
+                border-radius: 5px;
+            }
+        }
+    }
+}

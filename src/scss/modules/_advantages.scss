@@ -1,0 +1,244 @@
+.advantages {
+    position: relative;
+    text-align: center;    
+    background-color: transparent;    
+    color: $light;    
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('/images/bg-dog-2.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: -338px;
+        right: 0;
+        width: 396px;
+        height: 682px;
+        z-index: -1;
+
+        @include large {
+            background-size: contain;
+            top: -238px;
+            width: 300px;
+        }
+
+        @include tablet {
+            top: -172px;
+            right: 0;
+            width: 202px;
+        }
+        
+        @include mobile {
+            width: 100px;
+            height: 170px;
+            top: -83px;
+        }
+    }
+    
+    &__star {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-image: url('/images/star.svg');
+        background-repeat: no-repeat;
+        background-size: auto;  
+        background-position:left;
+        top: -115px;
+        width: 306px;
+        height: 307px;
+
+        @include large {
+            top: -154px;
+            width: 250px;
+            background-size: contain;
+        }
+
+        @include tablet {
+            top: -154px;
+            width: 201px;
+            background-size: contain;  
+        }
+        
+        @include mobile {
+            width: 140px;
+            height: 140px;
+            background-size: contain; 
+            top: -73px;
+        }
+        
+    }
+
+    &__bg {
+        position: relative;
+        background-color: $carrot;
+        background-image: url('/images/pattern.svg');
+        background-repeat: repeat;
+        background-size: cover;     
+        border-radius: 300px 300px 0 0;   
+
+        @include large {
+            border-radius: 150px 150px 0 0;
+        }
+
+        @include tablet {
+            border-radius: 120px 120px 0 0;
+        }
+        
+        @include mobile {
+            border-radius: 80px 80px 0 0; 
+            background-size: 200vw; 
+        }
+    }
+
+    &__title {
+        padding: 100px 0 50px;
+        font-size: 52px;  
+        margin: 0 auto;      
+
+        @include large {
+            font-size: 48px;
+        }
+
+        @include tablet {
+            font-size: 44px;
+            padding: 100px 0 32px;
+        }
+        
+        @include mobile {
+            padding: 50px 0 50px;
+            font-size: 30px;
+            width: min-content;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 100px;
+
+        @include laptop {
+            display: flex;
+            flex-direction: column;            
+            align-items: center;
+            padding-bottom: 80px;
+        }
+        
+        @include mobile {
+            display: block;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 417px;
+        height: fit-content;
+
+        @include tablet {
+            max-width: max-content;
+        }
+
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__item:last-child {
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item:nth-child(1)::before {
+        content: '';
+        width: 256px;
+        height: 256px;
+        background-image: url('/images/soft-dog-house.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include tablet {
+            width: 160px;
+            height: 160px;
+        }
+
+        @include mobile {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__item:nth-child(2)::before {
+        content: '';
+        width: 256px;
+        height: 256px;
+        background-image: url('/images/miska.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include tablet {
+            width: 160px;
+            height: 160px;
+        }
+
+        @include mobile {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__item:nth-child(3)::before {
+        content: '';
+        width: 256px;
+        height: 256px;
+        background-image: url('/images/pet.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include tablet {
+            width: 160px;
+            height: 160px;
+        }
+
+        @include mobile {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+
+    &__img {
+        max-width: 100%;
+        width: 256px;
+    }
+
+    &__subtitle {
+        font-size: 28px;
+        font-weight: 700;
+        padding: 12px 0;
+        max-width: min-content;
+
+        @include tablet {
+            font-size: 24px;
+            max-width: max-content;
+        }
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+
+        @include tablet {
+            font-size: 20px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+}
