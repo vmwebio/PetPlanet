@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    }       
 
     &__title {
         max-width: 1000px;
@@ -123,4 +123,16 @@
             transform: scale(0);
         }
     }
+
+    &__alert_success {
+        color: #155724;
+        padding: 0.75rem 1.25rem;
+        background-color: #d4edda;
+        border-color: #c3e6cb;    
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    } 
 }
